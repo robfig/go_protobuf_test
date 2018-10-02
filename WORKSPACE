@@ -24,3 +24,9 @@ git_repository(
 )
 load("@org_pubref_rules_protobuf//gogo:rules.bzl", "gogo_proto_repositories")
 gogo_proto_repositories()
+
+git_repository(
+  name = "com_github_protocolbuffers_protobuf",
+  remote = "https://github.com/protocolbuffers/protobuf",
+  tag = "v3.6.1"
+)
