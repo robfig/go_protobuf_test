@@ -18,12 +18,10 @@ load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 gazelle_dependencies()
 
 git_repository(
-  name = "org_pubref_rules_protobuf",
-  remote = "https://github.com/yext/rules_protobuf",
-  commit = "94631b9541bcbe2122178b738c158a633e94f4a0"
+  name = "com_github_pubref_rules_proto",
+  remote = "https://github.com/robfig/rules_proto",
+  commit = "6a85b0e4c3eeddf8863890ef48f2daab7a524ab7"
 )
-load("@org_pubref_rules_protobuf//gogo:rules.bzl", "gogo_proto_repositories")
-gogo_proto_repositories()
 
 git_repository(
   name = "com_github_protocolbuffers_protobuf",
